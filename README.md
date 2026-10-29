@@ -1,6 +1,6 @@
 # Qahwa House (demo)
 
-Demo website for a fictional cafe in Dubai. Editorial layout with floating photo stack, scroll zoom, menu filter tabs, open now badge, English and Arabic (right to left), and a booking form that writes the WhatsApp message.
+Demo website for a fictional cafe in Dubai. Pastel Mediterranean look: big soft serif type with an arch photo and floating stickers, swipeable menu chips over a masonry menu, a flip card for today's special, a reviews carousel, open now badge, English and Arabic (right to left), a mobile bottom tab bar, and a booking form that writes the WhatsApp message.
 
 Live: https://mohammadgulab.github.io/demo-cafe/
 

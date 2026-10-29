@@ -3,7 +3,7 @@
 var $=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 var L={en:{open:'Open now',closed:'Closed now',closes:'closes',opens:'opens at'},ar:{open:'مفتوح الآن',closed:'مغلق الآن',closes:'يغلق',opens:'يفتح'},hi:{open:'अभी खुला है',closed:'अभी बंद है',closes:'बंद होगा',opens:'खुलेगा'}};
 function lang(){var l=document.documentElement.lang;return L[l]?l:'en'}
-function fmt(h){var hh=h%24,ap=hh<12?'am':'pm',x=hh%12||12;return x+ap}
+function fmt(h){var hh=h%24,ap=hh<12?'am':'pm',x=hh%12||12;if(lang()==='ar')return x+(hh<12?' ص':' م');return x+ap}
 function badge(){ $('[data-open]').forEach(function(b){
   var o=+b.dataset.from,c=+b.dataset.to,tz=b.dataset.tz,now;
   try{now=+new Intl.DateTimeFormat('en-GB',{hour:'numeric',minute:'numeric',hour12:false,timeZone:tz}).format(new Date()).replace(':','.')}catch(e){now=new Date().getHours()}
