@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qahwa House Dubai | Arabic Coffee and Croissants (Demo)</title>
+<meta name="description" content="Demo cafe website in Dubai: menu filters, open now badge, table booking on WhatsApp, English and Arabic.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Noto+Kufi+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<link href="style.css?v=2" rel="stylesheet">
+<link href="fx.css?v=2" rel="stylesheet">
+<script>document.documentElement.classList.add('fx-js')</script>
+</head>
+<body>
+<nav class="nav"><div class="wrap"><a class="brand" href="#top">Qahwa House</a><ul><li><a href="#menu">Menu</a></li><li><a href="#book">Book</a></li><li><a href="#visit">Visit</a></li></ul></div></nav>
+<header class="hero ed" id="top">
+  <div class="wrap ed-grid">
+    <div><span data-open data-from="7" data-to="24" data-tz="Asia/Dubai"></span><h1 class="mega">Slow coffee in a fast city.</h1><p>Arabic coffee, specialty lattes and fresh croissants in Jumeirah. Sit in, take away, or book a table.</p><div class="acts"><a class="btn" href="#menu">See the menu</a><a class="btn ghost" href="#book">Book a table</a></div></div>
+    <div class="stack" aria-hidden="true"><img class="s1" src="img/dallah.jpg" alt=""><img class="s2" src="img/latte.jpg" alt=""><img class="s3" src="img/almond.jpg" alt=""></div>
+  </div>
+</header>
+<div class="marquee" aria-hidden="true"><div><span>Qahwa</span>&bull;<span>Latte</span>&bull;<span>Croissant</span>&bull;<span>Karak</span>&bull;<span>Qahwa</span>&bull;<span>Latte</span>&bull;<span>Croissant</span>&bull;<span>Karak</span>&bull;</div></div>
+<section class="zoom-stage" aria-label="Arabic coffee"><div class="zoom-sticky">
+  <img class="zoom-img" src="img/hero.jpg" alt="Copper dallah coffee pot" width="1600" height="1200" decoding="async">
+  <div class="zoom-top"><span class="zoom-kick">Keep scrolling</span><h2>Poured the old way</h2></div>
+  <div class="zoom-cap"><span class="zoom-kick">Our signature</span><h2>Arabic coffee</h2><p style="margin:.6rem 0 0">Cardamom, saffron and dates. AED 18</p></div>
+</div></section>
+<section id="menu"><div class="wrap">
+  <span class="kick" data-reveal>Menu</span><h2 class="h2" data-reveal>What are you having?</h2>
+  <div class="filters" data-filters="menug"><button class="on" data-f="all" aria-pressed="true">All</button><button data-f="coffee" aria-pressed="false">Coffee</button><button data-f="cold" aria-pressed="false">Cold</button><button data-f="bakery" aria-pressed="false">Bakery</button></div>
+  <div class="grid g2" id="menug"><div class="card" data-cat="coffee"><div class="row"><h3>Arabic coffee</h3><span class="price">AED 18</span></div><p>Cardamom and saffron, served with dates</p></div><div class="card" data-cat="coffee"><div class="row"><h3>Spanish latte</h3><span class="price">AED 24</span></div><p>Double shot with sweet condensed milk</p></div><div class="card" data-cat="coffee"><div class="row"><h3>Flat white</h3><span class="price">AED 22</span></div><p>Single origin, silky milk</p></div><div class="card" data-cat="cold"><div class="row"><h3>Iced pistachio latte</h3><span class="price">AED 28</span></div><p>House pistachio cream</p></div><div class="card" data-cat="cold"><div class="row"><h3>Karak cold brew</h3><span class="price">AED 22</span></div><p>Spiced tea and coffee over ice</p></div><div class="card" data-cat="bakery"><div class="row"><h3>Butter croissant</h3><span class="price">AED 14</span></div><p>Baked every morning</p></div><div class="card" data-cat="bakery"><div class="row"><h3>Almond croissant</h3><span class="price">AED 19</span></div><p>Twice baked with almond cream</p></div><div class="card" data-cat="bakery"><div class="row"><h3>Zaatar croissant</h3><span class="price">AED 18</span></div><p>Zaatar, olive oil and labneh</p></div></div>
+</div></section>
+<section id="book" style="background:var(--soft)"><div class="wrap split">
+  <div data-reveal><span class="kick">Book a table</span><h2 class="h2">Save your seat.</h2><p class="lead">Pick a time and we will confirm on WhatsApp within the hour.</p>
+    <form class="bform" data-wa="Hi Qahwa House, I'd like to book a table.">
+      <label>Your name<input name="Name" required placeholder="Your name"></label>
+      <label>Guests<select name="Guests"><option>2</option><option>3</option><option>4</option><option>5+</option></select></label>
+      <label>Date<input name="Date" type="date" required></label>
+      <label>Time<input name="Time" type="time" required></label>
+      <div class="full"><button class="btn" type="submit">Send on WhatsApp</button></div>
+    </form></div>
+  <div data-reveal class="curtain"><img src="img/latte.jpg" alt="Latte and croissant" loading="lazy" style="border-radius:18px"></div>
+</div></section>
+<section id="visit"><div class="wrap split">
+  <div data-reveal><span class="kick">Visit</span><h2 class="h2">Find us in Jumeirah.</h2><div class="info"><div class="card"><h3>Address</h3><p>Jumeirah Beach Road, Dubai</p></div><div class="card"><h3>Hours</h3><p>Every day 7am to midnight</p></div></div></div>
+  <div data-reveal><iframe class="map" title="Map" src="https://www.openstreetmap.org/export/embed.html?bbox=55.2300%2C25.2000%2C55.2700%2C25.2250&amp;layer=mapnik&amp;marker=25.2120%2C55.2500" loading="lazy"></iframe></div>
+</div></section>
+<footer><div class="wrap">Demo website. Qahwa House is a fictional cafe; prices are examples.<br>Photos from Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Arabic_copper_coffee_Dallah_(1).jpg" rel="noopener">Arabic copper coffee Dallah (1)</a> by Justwiki (<a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener">CC0</a>); <a href="https://commons.wikimedia.org/wiki/File:All_butter_croissant_and_latte_-_Blend_Coffee_Co._2026-01-02.jpg" rel="noopener">All butter croissant and latte - Blend C</a> by Andy Li (<a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener">CC0</a>); <a href="https://commons.wikimedia.org/wiki/File:Almond_croissant_-_Coffee_Club_2025-03-12.jpg" rel="noopener">Almond croissant - Coffee Club 2025-03-1</a> by Andy Li (<a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener">CC0</a>); <a href="https://commons.wikimedia.org/wiki/File:Arabic_dallah_(coffee_pot).jpg" rel="noopener">Arabic dallah (coffee pot)</a> by Bluehillies (<a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener">CC0</a>).<br>Design and code by Mohammad Gulab.</div></footer>
+<a class="wa-float" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.1 3 3.47 8.6 3.47 15.5c0 2.2.58 4.36 1.68 6.26L3.36 28.4l6.82-1.78a12.6 12.6 0 0 0 5.86 1.47h.01c6.93 0 12.57-5.6 12.57-12.5C28.62 8.6 22.98 3 16.04 3zm0 22.95h-.01a10.5 10.5 0 0 1-5.33-1.45l-.38-.23-4.05 1.06 1.08-3.93-.25-.4a10.3 10.3 0 0 1-1.6-5.5c0-5.74 4.7-10.4 10.5-10.4 5.79 0 10.49 4.66 10.49 10.4 0 5.75-4.7 10.45-10.45 10.45zm5.76-7.8c-.32-.16-1.86-.91-2.15-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.18.21-.37.23-.68.08-.32-.16-1.33-.49-2.53-1.55-.94-.83-1.57-1.86-1.75-2.17-.18-.31-.02-.48.14-.64.14-.14.32-.37.47-.55.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.7-.97-2.33-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.62 0 1.54 1.13 3.03 1.29 3.24.16.21 2.22 3.37 5.37 4.72.75.32 1.34.52 1.8.66.75.24 1.44.2 1.98.12.6-.09 1.86-.75 2.12-1.48.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36z"/></svg><span>WhatsApp</span></a>
+<script type="application/json" id="i18n">{"lang": "ar", "dir": "rtl", "label": "العربية", "name": "Arabic", "t": {"Menu": "القائمة", "Book": "احجز", "Visit": "زورونا", "Slow coffee in a fast city.": "قهوة على مهل في مدينة سريعة.", "Arabic coffee, specialty lattes and fresh croissants in Jumeirah. Sit in, take away, or book a table.": "قهوة عربية ولاتيه مختص وكرواسون طازج في جميرا. اجلس عندنا أو خذ طلبك أو احجز طاولة.", "See the menu": "شاهد القائمة", "Book a table": "احجز طاولة", "Poured the old way": "تُصب على الطريقة القديمة", "Our signature": "طبقنا المميز", "Arabic coffee": "قهوة عربية", "Cardamom, saffron and dates. AED 18": "هيل وزعفران وتمر. 18 درهم", "Keep scrolling": "تابع التمرير", "What are you having?": "ماذا تطلب اليوم؟", "All": "الكل", "Coffee": "قهوة", "Cold": "بارد", "Bakery": "مخبوزات", "Save your seat.": "احجز مكانك.", "Pick a time and we will confirm on WhatsApp within the hour.": "اختر الوقت وسنؤكد لك على واتساب خلال ساعة.", "Your name": "اسمك", "Guests": "عدد الضيوف", "Date": "التاريخ", "Time": "الوقت", "Send on WhatsApp": "أرسل على واتساب", "Find us in Jumeirah.": "تجدنا في جميرا.", "Address": "العنوان", "Hours": "ساعات العمل", "Jumeirah Beach Road, Dubai": "شارع جميرا، دبي", "Every day 7am to midnight": "يومياً من 7 صباحاً حتى منتصف الليل", "Cardamom and saffron, served with dates": "هيل وزعفران، تقدم مع التمر", "Spanish latte": "سبانيش لاتيه", "Double shot with sweet condensed milk": "جرعتان مع حليب مكثف محلى", "Flat white": "فلات وايت", "Single origin, silky milk": "بن من مصدر واحد مع حليب ناعم", "Iced pistachio latte": "لاتيه بالفستق مثلج", "House pistachio cream": "كريمة فستق من صنعنا", "Karak cold brew": "كرك كولد برو", "Spiced tea and coffee over ice": "شاي بالبهارات وقهوة مع الثلج", "Butter croissant": "كرواسون بالزبدة", "Baked every morning": "يخبز كل صباح", "Almond croissant": "كرواسون باللوز", "Twice baked with almond cream": "مخبوز مرتين مع كريمة اللوز", "Zaatar croissant": "كرواسون بالزعتر", "Zaatar, olive oil and labneh": "زعتر وزيت زيتون ولبنة", "AED 18": "18 درهم", "AED 24": "24 درهم", "AED 22": "22 درهم", "AED 28": "28 درهم", "AED 14": "14 درهم", "AED 19": "19 درهم"}}</script>
+<script>(function(){var n=document.querySelector('.nav');function f(){n.classList.toggle('solid',window.scrollY>40)}f();window.addEventListener('scroll',f,{passive:true})})()</script>
+<script src="i18n.js?v=1"></script>
+<script src="dyn.js?v=1"></script>
+<script src="fx.js?v=1"></script>
+</body>
+</html>
